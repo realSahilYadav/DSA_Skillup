@@ -5,13 +5,18 @@ int main() {
 
     int n;
     cin >> n;
-    if (n%2==0)
-    {
-        cout<<n<<" is prime"<<endl;
+
+    int i = 2;
+
+    while(i<n) {
+        //divide hogya, not prime
+        if(n%i==0) {
+            cout<< " Not prime for "<< i << endl;
+        }
+        else{
+            cout<<" Prime for "<< i <<endl;
+        }
+        i = i + 1;
     }
-    else
-    {
-        cout<<n<<" is not prime"<<endl;
-    }
-    return 0;
+
 }
