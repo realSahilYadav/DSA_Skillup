@@ -8,8 +8,8 @@ int main() {
 
     int i = 2;
 
-    while(i<n) {
-        //divide hogya, not prime
+    while(i<n) 
+    {
         if(n%i==0) {
             cout<< " Not prime for "<< i << endl;
         }
@@ -18,5 +18,5 @@ int main() {
         }
         i = i + 1;
     }
-
+    return 0;
 }
