@@ -66,6 +66,6 @@ int main()
     int key;
     cout<<"Enter the element you want to search:"<<endl;
     cin>>key;
-    cout<<key<<" has index: "<<searchElement(arr, 5, key)<<"in given array"<<endl;;
+    cout<<key<<" has index: "<<searchElement(arr, 5, key)<<"in given array"<<endl;
     return 0;
 }
