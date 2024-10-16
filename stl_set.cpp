@@ -36,6 +36,7 @@ int main()
     }
     
     cout<<endl;
+    
     cout<<"5 is present or not-> "<<s.count(5)<<endl;
 
     set<int>::iterator itr = s.find(5);

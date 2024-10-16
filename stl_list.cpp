@@ -24,7 +24,6 @@ int main()
     //     cout<<i<<" ";
     // }
 
-    cout<<"Element at index 1-> "<<l.at(1)<<endl;
     cout<<"First element-> "<<l.front();
     cout<<"Last element-> "<<l.back();
     cout<<"Empty or not-> "<<l.empty();
@@ -34,5 +33,6 @@ int main()
     {
         cout<<i<<" ";
     }
+
     return 0;
 }

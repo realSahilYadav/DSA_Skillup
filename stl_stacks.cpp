@@ -14,6 +14,7 @@ int main()
     cout<<"Size of stack-> "<<s.size()<<endl;
     
     s.pop();
+    
     cout<<"Top element-> "<<s.top()<<endl;
     cout<<"Size of stack-> "<<s.size()<<endl;
     cout<<"Empty or not-> "<<s.empty()<<endl;
