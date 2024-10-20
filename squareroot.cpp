@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 
-int squareRoot(int n)
+long long int squareRoot(int n)
 {
     int start = 0;
     int end = n;
-    int mid = 1;
-    int sq = 1;
+    long long int mid = 1;
+    long long int sq = 1;
     int target = n;
     int rem = 1;
 
