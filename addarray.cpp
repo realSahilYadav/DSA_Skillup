@@ -52,8 +52,6 @@ vector<int> addArray(int arr1[], int m, int arr2[], int n)
         i--;
     }
 
-    carry = 0;
-
     while(j >= 0)
     {
         int sum = arr2[j] + carry;
