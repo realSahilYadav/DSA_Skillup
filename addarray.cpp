@@ -36,8 +36,8 @@ vector<int> addArray(int arr1[], int m, int arr2[], int n)
         int val2 = arr2[j];
 
         int sum = val1 + val2 + carry;
-        carry = sum / 10;
-        sum = sum % 10;
+        carry = sum/10;
+        sum = sum%10;
         ans.push_back(sum);
         i--;
         j--;
@@ -46,8 +46,8 @@ vector<int> addArray(int arr1[], int m, int arr2[], int n)
     while(i >= 0)
     {
         int sum = arr1[i] + carry;
-        carry = sum / 10;
-        sum = sum % 10;
+        carry = sum/10;
+        sum = sum%10;
         ans.push_back(sum);
         i--;
     }
@@ -57,10 +57,18 @@ vector<int> addArray(int arr1[], int m, int arr2[], int n)
     while(j >= 0)
     {
         int sum = arr2[j] + carry;
-        carry = sum / 10;
-        sum = sum % 10;
+        carry = sum/10;
+        sum = sum%10;
         ans.push_back(sum);
         j--;
+    }
+    
+    while(carry != 0)
+    {
+        int sum = carry;
+        carry = sum/10;
+        sum = sum%10;
+        ans.push_back(sum);
     }
 
     return reverse(ans);
