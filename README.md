@@ -2,6 +2,6 @@
 
 
 
-Current Progress: On vid 23
+Current Progress: On vid 24
 
 *Author: Sahil Yadav*
