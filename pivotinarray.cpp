@@ -5,7 +5,7 @@ int getPivot(int arr[], int size)
 {
     int start = 0, end = size -1, mid = 0;
 
-    while (start <= end)
+    while (start < end)
     {
         mid=start + (start + end)/2;
 
