@@ -49,6 +49,9 @@ public:
     void pop_front() {
         if (head == NULL) {
             cout<<"Invalid Operation"<<endl;
+        } else if(head == tail){
+            delete head;
+            head = tail = NULL;
         } else {
             Node* temp = head;
             head = head->next;
@@ -61,6 +64,9 @@ public:
     void pop_back() {
         if (head == NULL) {
             cout<<"Invalid Operation"<<endl;
+        } else if(head == tail) {
+            delete head;
+            head = tail = NULL;
         } else {
             Node* temp = tail;
             tail = tail->prev;
