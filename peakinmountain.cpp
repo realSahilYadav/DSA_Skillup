@@ -7,7 +7,7 @@ int peakInMountain(int arr[], int size)
 
     while (start <= end)
     {
-        mid=start + (start + end)/2;
+        mid=(start + end)/2;
 
         if (arr[mid] < arr[mid+1])
         {
